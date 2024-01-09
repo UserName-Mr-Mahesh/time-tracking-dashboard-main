@@ -1,0 +1,191 @@
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+  
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#card{
+    width: 100%;
+    height: 100vh;
+    padding: 10%;
+    background-color: var(--Very-dark-blue);
+    z-index: -3;
+    position: absolute;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10%; */
+    height: 90%;
+}
+#profile{
+    width: 23%;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: var(--Dark-blue);
+}
+#image{
+    background-color: var(--Blue);
+    padding: 25px;
+    height: 66%;
+    display: grid;
+    border-radius: 10px;
+}
+#image #pic{
+    width: 44%;
+    /* height: 67%; */
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 95%;
+    height: 95%;
+}
+#time{
+    padding: 10px;
+    height: 33%;
+}
+#time ul{
+    height: 100%;
+    align-items: center;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    color: aliceblue;
+}
+#time ul li:hover{
+color: gray;
+cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}
+#act{
+    width: 75%;
+    height: 100%;
+}
+#act ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+}
+#act ul li{
+    width: 30%;
+    /* background-color: var(--Dark-blue); */
+    z-index: -1;
+    border-radius: 10px;
+    margin: 10px;
+}
+li h1{
+    font-size: 32px;
+}
+.logo{
+    width: 100%;
+    height: 20%;
+    border-radius: 10px 10px 0 0;
+    border: 0 0 10px 10px;
+    z-index: -1;
+    position: relative;
+    padding: 0 0 -17px 0
+}
+.logo svg{
+    float: right;
+    height: 100%;
+}
+.res{
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    background-color: var(--Dark-blue);
+    border-radius: 10px;
+    margin: -6px 0;
+    color: white;
+    display: grid;
+    gap: 10px;
+}  
+h1{
+    font-size: 55px;
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+.res #sub{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+
+@media screen and (max-width:600px) {
+    #card{
+        width: 100%;
+        height: auto;
+    }
+    #container{
+        display: block;
+        height: auto;
+    }
+    #profile{
+        width: 100%;
+    }
+    #image{
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }    
+    #time ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    #act{
+        width: 100%;
+        height: auto;
+    }
+    #act ul{
+        width: 100%;
+    }
+    #act ul li{
+        width: 100%;
+        margin: 30px 0px 0px 7px;
+    }
+    li h1{
+        font-size: 32px;
+    }
+    .logo{
+        height: 40px;
+    }
+    .logo svg{
+        float: right;
+        height: 100%;
+    }
+    .res{
+        padding: 20px;
+    }
+    h1{
+        font-size: 32px;
+        color: aliceblue;
+        font-weight: 10;
+    }
+    .res div{
+        display: flex;
+        justify-content: space-between;
+    }
+}
